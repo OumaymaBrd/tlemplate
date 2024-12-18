@@ -1,0 +1,33 @@
+:root {
+    /* Nouvelle palette de couleurs plus moderne */
+    --primary-color: #1a237e;
+    --secondary-color: #0d47a1;
+    --accent-color: #2962ff;
+    --text-color: #2c3e50;
+    --background-color: #f8f9fa;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --success-color: #00c853;
+    --danger-color: #ff1744;
+    
+    /* Typographie */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    
+    /* Ombres */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+  }

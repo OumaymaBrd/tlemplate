@@ -1,0 +1,83 @@
+/* Composants réutilisables */
+
+/* Boutons */
+.btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: var(--transition-normal);
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .btn-primary {
+    background: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  /* Cartes */
+  .card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Formulaires */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(41, 98, 255, 0.1);
+    outline: none;
+  }
+  
+  /* Tableaux */
+  .table {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .table th {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  
+  .table tbody tr:hover {
+    background: var(--gray-100);
+  }

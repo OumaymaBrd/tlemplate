@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Cabinet Martin & Associés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cabinet Martin & Associés</div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="login.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin">
+        <h1>Tableau de bord</h1>
+        
+        <section class="admin-stats">
+            <div class="stat-card">
+                <h3>Rendez-vous aujourd'hui</h3>
+                <p class="stat-number">5</p>
+            </div>
+            <div class="stat-card">
+                <h3>En attente</h3>
+                <p class="stat-number">12</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total du mois</h3>
+                <p class="stat-number">45</p>
+            </div>
+        </section>
+
+        <section class="appointments">
+            <h2>Rendez-vous à venir</h2>
+            <table class="appointments-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Heure</th>
+                        <th>Client</th>
+                        <th>Sujet</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-02-20</td>
+                        <td>14:00</td>
+                        <td>Jean Dupont</td>
+                        <td>Consultation droit immobilier</td>
+                        <td>
+                            <button class="action-button confirm">Confirmer</button>
+                            <button class="action-button cancel">Annuler</button>
+                        </td>
+                    </tr>
+                    <!-- Plus de rendez-vous ici -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cabinet Martin & Associés - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

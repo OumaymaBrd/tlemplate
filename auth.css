@@ -1,0 +1,53 @@
+/* Styles pour les pages d'authentification */
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 3rem;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .auth-header h1 {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .auth-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  .auth-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .auth-links {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray-200);
+  }
+  
+  .auth-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .auth-links a:hover {
+    text-decoration: underline;
+  }

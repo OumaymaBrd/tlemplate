@@ -1,0 +1,83 @@
+/* Layout général */
+body {
+    font-family: var(--font-primary);
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  /* Header moderne avec effet de verre */
+  header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: var(--transition-normal);
+  }
+  
+  header.scrolled {
+    box-shadow: var(--shadow-md);
+  }
+  
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: var(--transition-normal);
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Container principal */
+  main {
+    max-width: 1400px;
+    margin: 7rem auto 2rem;
+    padding: 0 2rem;
+  }
+  
+  /* Footer moderne */
+  footer {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    position: relative;
+  }

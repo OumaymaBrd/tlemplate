@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Martin & Associés</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cabinet Martin & Associés</div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="register.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Cabinet Martin & Associés</h1>
+                <p>Excellence juridique et accompagnement personnalisé pour tous vos besoins légaux</p>
+                <a href="reservation.html" class="btn btn-primary">
+                    <i data-feather="calendar"></i>
+                    Prendre rendez-vous
+                </a>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Nos Domaines d'Expertise</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="briefcase"></i>
+                    </div>
+                    <h3>Droit des Affaires</h3>
+                    <p>Conseil et accompagnement des entreprises</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="home"></i>
+                    </div>
+                    <h3>Droit Immobilier</h3>
+                    <p>Transactions et litiges immobiliers</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3>Droit de la Famille</h3>
+                    <p>Divorce, succession et adoption</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cabinet Martin & Associés - Tous droits réservés</p>
+    </footer>
+
+    <script>
+      feather.replace();
+      
+      // Effet de scroll sur le header
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    </script>
+</body>
+</html>

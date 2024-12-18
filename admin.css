@@ -1,0 +1,60 @@
+/* Styles pour la page admin */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .admin-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .stat-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin: 1rem 0;
+  }
+  
+  .appointments {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .action-button {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-normal);
+  }
+  
+  .action-button.confirm {
+    background: var(--success-color);
+    color: var(--white);
+  }
+  
+  .action-button.cancel {
+    background: var(--danger-color);
+    color: var(--white);
+  }
